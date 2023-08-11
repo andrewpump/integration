@@ -49,7 +49,7 @@ So the above approach is fantastic if you have a React application or use Redux 
 #### DOM Exposing
 So interfacing at the front-end framework level become unscalable, but provides some benefits. If scalability is the issue, then there is really only a single interface to create a scalable product, the DOM.  To solve the problem demonstrated above, our technology reads the DOM and automatically creates invokables.  Take for example our demo application: 
 
-![[in.vestor.app_dash.png]]
+![in.vestor.app dashboard](./in.vestor.app_dash.png)
 *in.vestor.app is an open-source GitHub project for displaying crypto information which we use as a live demo for our technology.  Find the project [here](https://github.com/onur-celik/invester)*
 
 By crawling across the DOM and selecting essential elements such as *buttons, inputs, flagged divs, and more*, our framework is able to circumnavigate the integration issue presented by Manual Function Exposing.  In the above in.vestor.app, buttons such as "Add Widget", "Reset Dashboard", and others are automatically turned into invokables.  This makes our framework completely front-end agnostic so whether a project uses React, Angular, Vue, or something else, integration would work natively.
